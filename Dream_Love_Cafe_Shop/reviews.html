@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Love Cafe Shop</title>
+   
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script>
+        function Customer_review() {
+            alert('Thank You for your Reviews.');
+            console.log(window.location.href="index.html");
+            
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Dream Love Cafe Shop</h1>
+    
+    <div id="container">    
+           
+           <header>
+               <nav>
+                    <ul id="nav">
+                        <li><a href="index.html">Home</a></li>
+                    
+                        <li><a href="about.html">About</a></li>
+                    
+                        <li class="sub-menu"><a href="#">Menu</a>
+                            <ul class="dropdown-menu" style="border-bottom-width: 0px; padding-bottom: 0px; border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-top: 0px; margin-top: 75px; margin-bottom: -2px; padding-left: 0px; margin-left: 30px;">
+
+                                <li id="submenu" style="padding-left: 0px; padding-top: 10px; text-align: center;"><a href="drink.html">Drinks</a></li>
+
+                                <!-- <li id="submenu" style="padding-left: 0px; padding-top: 10px; text-align: center;"><a href="iced-cafe.html">Iced Cafe</a></li> -->
+
+                                <li id="submenu" style="padding-left: 0px; padding-bottom: 10px; padding-top: 10px; text-align: center;"><a href="dessert.html">Dessert</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="reviews.html"  class="current">Reviews</a></li>
+                   
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+               </nav>
+           </header>
+
+            
+           <p id="reviews">
+                
+            Shy Your Reviews!!
+
+        </p>
+
+        <form action="#" id="contactus">
+            <label for="name">Name:</label>&nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" name="name" id="name" >
+            <br>
+            <label for="email">Email:</label>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+            <input type="text" name="email" id="email">
+            <br><br>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="39" rows="10"></textarea>
+            <br><br>
+
+            <input type="submit" name="submit" value="Submit" id="button" onclick="Customer_review()">
+            <!-- <button type="submit" value="Submit" class="button">Submit</button> -->
+
+            
+
+        </form>
+
+        <footer> Copyright@2020, Dream Love Coffee Shop.</footer> 
+        
+    </div>
+</body>
+</html>

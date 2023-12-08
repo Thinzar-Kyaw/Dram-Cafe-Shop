@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dream Love Cafe Shop</title>
+
+
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+      <h1>Dream Love Cafe Shop</h1>
+
+      <div id="container">
+
+            <header>
+                  <nav>
+                        <ul id="nav">
+                              <li><a href="index.html" class="current">Home</a></li>
+
+                              <li><a href="about.html">About</a></li>
+
+                              <li class="sub-menu"><a href="#">Menu</a>
+                                    <ul class="dropdown-menu"
+                                          style="border-bottom-width: 0px; padding-bottom: 0px; border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-top: 0px; margin-top: 75px; margin-bottom: -2px; padding-left: 0px; margin-left: 30px;">
+
+                                          <li id="submenu"
+                                                style="padding-left: 0px; padding-top: 10px; text-align: center;"><a
+                                                      href="drink.html">Drinks</a></li>
+
+                                          <!-- <li id="submenu" style="padding-left: 0px; padding-top: 10px; text-align: center;"><a href="iced-cafe.html">Iced Cafe</a></li> -->
+
+                                          <li id="submenu"
+                                                style="padding-left: 0px; padding-bottom: 10px; padding-top: 10px; text-align: center;">
+                                                <a href="dessert.html">Dessert</a></li>
+
+                                    </ul>
+                              </li>
+                              <li><a href="reviews.html">Reviews</a></li>
+
+                              <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                  </nav>
+            </header>
+
+            <strong id="Our_menu">Our Menu</strong>
+
+            <div class="row_container">
+                  <div class="row1_dessert">
+
+                        <div class="col-md-4">
+                              <img src="images/dulce-de-leche-flan-2a.jpg" alt="" id="row1_col_left">
+                        </div>
+
+                        <div class="col-md-4" id="menu_name">
+                              <p id="menu_name_1">Egg Pudding </p>
+                              <p id="menu_price_1">500Ks</p>
+                        </div>
+
+                        <div class="col-md-4">
+                              <button class="btnorder" id="row1_col_right" onclick="addOrder()">Order Now</button>
+                        </div>
+                  </div>
+
+                  <div class="row1_dessert">
+                        <div class="col-md-4">
+                              <img src="images/istockphoto-64.jpg" alt="" id="row1_col_left">
+                        </div>
+
+                        <div class="col-md-4" id="menu_name">
+                              <p id="menu_name_2">Bread Toast </p>
+                              <p id="menu_price_2">500Ks</p>
+                        </div>
+
+                        <div class="col-md-4">
+                              <button class="btnorder" id="row1_col_right" onclick="addOrder2()">Order Now</button>
+                        </div>
+                  </div>
+
+                  <div class="row1_dessert">
+                        <div class="col-md-4">
+                              <img src="images/istockphoto.jpg" alt="" id="row1_col_left">
+                        </div>
+
+                        <div class="col-md-4" id="menu_name">
+                              <p id="menu_name_3">Fired_Chicken Toast </p>
+                              <p id="menu_price_3">800Ks</p>
+                        </div>
+
+                        <div class="col-md-4">
+                              <button class="btnorder" id="row1_col_right" onclick="addOrder3()">Order Now</button>
+                        </div>
+                  </div>
+
+                  <div class="row1_dessert">
+                        <div class="col-md-4">
+                              <img src="images/raisin-toast.jpg" alt="" id="row1_col_left">
+                        </div>
+
+                        <div class="col-md-4" id="menu_name">
+                              <p id="menu_name_4">Raisin Toast </p>
+                              <p id="menu_price_4">800Ks</p>
+                        </div>
+
+                        <div class="col-md-4">
+                              <button class="btnorder" id="row1_col_right" onclick="addOrder4()">Order Now</button>
+                        </div>
+                  </div>
+
+                  <div class="row1_dessert">
+                        <div class="col-md-4">
+                              <img src="images/swiss-roll-ichiroku.jpg" alt="" id="row1_col_left">
+                        </div>
+
+                        <div class="col-md-4" id="menu_name">
+                              <p id="menu_name_5">Swiss Roll </p>
+                              <p id="menu_price_5">1000Ks</p>
+                        </div>
+
+                        <div class="col-md-4">
+                              <button class="btnorder" id="row1_col_right" onclick="addOrder5()">Order Now</button>
+                        </div>
+                  </div>
+
+                  <div class="row1_dessert">
+                        <div class="col-md-4">
+                              <img src="images/ham-cheese-toast_1147-511.jpg" alt="" id="row1_col_left">
+                        </div>
+
+                        <div class="col-md-4" id="menu_name">
+                              <p id="menu_name_6">Cheese Sandwich </p>
+                              <p id="menu_price_6">1000Ks</p>
+                        </div>
+
+
+                        <div class="col-md-4">
+                              <button class="btnorder" id="row1_col_right" onclick="addOrder6()">Order Now</button>
+                        </div>
+                  </div>
+
+
+                  <div class="row1_dessert">
+                        <div class="col-md-4">
+                              <img src="images/chocolate_cake2.jpg" alt="" id="row1_col_left">
+                        </div>
+
+                        <div class="col-md-4" id="menu_name">
+                              <p id="menu_name_7">Chocolate Cake </p>
+                              <p id="menu_price_7">800Ks</p>
+                        </div>
+
+
+                        <div class="col-md-4">
+                              <button class="btnorder" id="row1_col_right" onclick="addOrder7()">Order Now</button>
+                        </div>
+                  </div>
+
+                  <div class="row1_dessert">
+                        <div class="col-md-4">
+                              <img src="images/Vanilla-Cupcake-Vanilla.jpg" alt="" id="row1_col_left">
+                        </div>
+
+                        <div class="col-md-4" id="menu_name">
+                              <p id="menu_name_8">Vanilla Cupcake </p>
+                              <p id="menu_price_8">500Ks</p>
+                        </div>
+
+                        <div class="col-md-4">
+                              <button class="btnorder" id="row1_col_right" onclick="addOrder8()">Order Now</button>
+                        </div>
+                  </div>
+
+                  <div class="row1_dessert">
+                        <div class="col-md-4">
+                              <img src="images/chocolate_Cupcate.jpg" alt="" id="row1_col_left">
+                        </div>
+
+                        <div class="col-md-4" id="menu_name">
+                              <p id="menu_name_9">Chocolate Cupcate </p>
+                              <p id="menu_price_9">500Ks</p>
+                        </div>
+
+                        <div class="col-md-4">
+                              <button class="btnorder" id="row1_col_right" onclick="addOrder9()">Order Now</button>
+                        </div>
+                  </div>
+
+            </div>
+
+
+            <footer> Copyright@2020, Dream Love Coffee Shop.</footer>
+      </div>
+
+      <script>
+            
+
+            function addOrder() {
+
+                  var menuName = document.getElementById("menu_name_1").innerHTML;
+                  var menuPrice = document.getElementById("menu_price_1").innerHTML;
+                  var queryString = "?menu_name=" + menuName + "&menu_price=" + menuPrice;
+                  window.location.href = "order.html" + queryString;
+
+
+            }
+
+            function addOrder2() {
+
+                  var menuName = document.getElementById("menu_name_2").innerHTML;
+                  var menuPrice = document.getElementById("menu_price_2").innerHTML;
+                  var queryString = "?menu_name=" + menuName + "&menu_price=" + menuPrice;
+                  window.location.href = "order.html" + queryString;
+
+
+            }
+
+            function addOrder3() {
+
+                  var menuName = document.getElementById("menu_name_3").innerHTML;
+                  var menuPrice = document.getElementById("menu_price_3").innerHTML;
+                  var queryString = "?menu_name=" + menuName + "&menu_price=" + menuPrice;
+                  window.location.href = "order.html" + queryString;
+
+
+            }
+
+            function addOrder4() {
+
+                  var menuName = document.getElementById("menu_name_4").innerHTML;
+                  var menuPrice = document.getElementById("menu_price_4").innerHTML;
+                  var queryString = "?menu_name=" + menuName + "&menu_price=" + menuPrice;
+                  window.location.href = "order.html" + queryString;
+
+
+            }
+
+            function addOrder5() {
+
+                  var menuName = document.getElementById("menu_name_5").innerHTML;
+                  var menuPrice = document.getElementById("menu_price_5").innerHTML;
+                  var queryString = "?menu_name=" + menuName + "&menu_price=" + menuPrice;
+                  window.location.href = "order.html" + queryString;
+
+
+            }
+
+            function addOrder6() {
+
+                  var menuName = document.getElementById("menu_name_6").innerHTML;
+                  var menuPrice = document.getElementById("menu_price_6").innerHTML;
+                  var queryString = "?menu_name=" + menuName + "&menu_price=" + menuPrice;
+                  window.location.href = "order.html" + queryString;
+
+
+            }
+
+            function addOrder7() {
+
+                  var menuName = document.getElementById("menu_name_7").innerHTML;
+                  var menuPrice = document.getElementById("menu_price_7").innerHTML;
+                  var queryString = "?menu_name=" + menuName + "&menu_price=" + menuPrice;
+                  window.location.href = "order.html" + queryString;
+
+
+            }
+
+            function addOrder8() {
+
+                  var menuName = document.getElementById("menu_name_8").innerHTML;
+                  var menuPrice = document.getElementById("menu_price_8").innerHTML;
+                  var queryString = "?menu_name=" + menuName + "&menu_price=" + menuPrice;
+                  window.location.href = "order.html" + queryString;
+
+
+            }
+
+            function addOrder9() {
+
+                  var menuName = document.getElementById("menu_name_9").innerHTML;
+                  var menuPrice = document.getElementById("menu_price_9").innerHTML;
+                  var queryString = "?menu_name=" + menuName + "&menu_price=" + menuPrice;
+                  window.location.href = "order.html" + queryString;
+
+
+            }
+      </script>
+</body>
+
+</html>

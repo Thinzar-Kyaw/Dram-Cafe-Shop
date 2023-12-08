@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Love Cafe Shop</title>
+   
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+  <h1>Dream Love Cafe Shop</h1>
+    
+    <div id="container">        
+           
+           <header>
+               <nav>
+                    <ul id="nav">
+                        <li><a href="index.html" class="current">Home</a></li>
+                    
+                        <li><a href="about.html">About</a></li>
+                    
+                        <li class="sub-menu"><a href="#">Menu</a>
+                            <ul class="dropdown-menu" style="border-bottom-width: 0px; padding-bottom: 0px; border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-top: 0px; margin-top: 75px; margin-bottom: -2px; padding-left: 0px; margin-left: 30px;">
+
+                                <li id="submenu" style="padding-left: 0px; padding-top: 10px; text-align: center;"><a href="drink.html">Drinks</a></li>
+
+                                <!-- <li id="submenu" style="padding-left: 0px; padding-top: 10px; text-align: center;"><a href="iced-cafe.html">Iced Cafe</a></li> -->
+
+                                <li id="submenu" style="padding-left: 0px; padding-bottom: 10px; padding-top: 10px; text-align: center;"><a href="dessert.html">Dessert</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                   
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+               </nav>
+           </header>
+
+          
+          <div class="slideshow-container" style="border: 1px solid #9c5959;">
+
+              <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="images/caramel-cafe-latte.jpg" style="width:100%; height:480px;">
+                  <div class="text">Caramel Cafe Latte</div>
+              </div>
+              
+              <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="images//cappuccino_PNG19.png" style="width:100%; height:480px;">
+                  <div class="text">Cappuccino</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/chocolate_cake2.jpg" style="width:100%; height:480px;">
+                <div class="text">Chocolate Cake</div>
+            </div>
+              
+              <div class="mySlides fade">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="images/ham-cheese-toast_1147-511.jpg" style="width:100%; height:480px;">
+                  <div class="text">Cheese Toast</div>
+              </div>
+
+              <!-- <div class="mySlides fade">
+                  <div class="numbertext">5 / 5</div>
+                  <img src="images/swiss-roll-ichiroku.jpg" style="width:100%; height:480px;">
+                  <div class="text">Swiss Roll</div>
+              </div> -->
+              
+          </div>
+
+          <br>
+              
+          <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+          </div>
+           
+          <script>
+              var slideIndex = 0;
+              showSlides();
+                  
+              function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+                slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
+              }
+          </script>
+
+          <footer> Copyright@2020, Dream Love Coffee Shop.</footer> 
+
+    </div>
+
+     
+
+   
+</body>
+</html>

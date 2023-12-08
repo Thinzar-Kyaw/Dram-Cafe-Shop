@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Love Cafe Shop</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script>
+        function pageLoad() {
+            var queryString = decodeURIComponent(window.location.search);
+            var getParam = parse_query_string(queryString);
+            console.log(getParam);
+            console.log(getParam["?menu_name"]);
+            console.log(getParam.menu_price);
+
+            console.log(document.getElementById("lblname").innerHTML);
+            // document.getElementById("name1").value = getParam["?menu_name"];
+            // document.getElementById("lblname").innerHTML = getParam.menu_price;
+
+            document.getElementById("lblname").innerHTML=getParam["?menu_name"];
+            document.getElementById("name1").value=getParam.menu_price;
+
+           
+
+            // queryString = queryString.substring(1);
+            // var queries = queryString.split("&");
+            // for (let i = 0; i < queries.length; i++) {
+            //     console.log(queries[i]);
+            // }
+
+            function parse_query_string(query) {
+                var vars = query.split("&");
+                var query_string = {};
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split("=");
+                    var key = decodeURIComponent(pair[0]);
+                    var value = decodeURIComponent(pair[1]);
+                    // If first entry with this name
+                    if (typeof query_string[key] === "undefined") {
+                        query_string[key] = decodeURIComponent(value);
+                        // If second entry with this name
+                    } else if (typeof query_string[key] === "string") {
+                        var arr = [query_string[key], decodeURIComponent(value)];
+                        query_string[key] = arr;
+                        // If third or later entry with this name
+                    } else {
+                        query_string[key].push(decodeURIComponent(value));
+                    }
+                }
+                return query_string;
+            }
+        }
+
+        function Orderconfirm() {
+            alert('Thank You for your purchase.');
+            console.log(window.location.href="index.html");
+        }
+
+
+    </script>
+</head>
+
+<body onload="pageLoad()">
+
+    <h1>Dream Love Cafe Shop</h1>
+
+    <div id="container">
+
+        <header>
+            <nav>
+                <ul id="nav">
+                    <li><a href="index.html" class="current">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li class="sub-menu"><a href="#">Menu</a>
+                        <ul class="dropdown-menu"
+                            style="border-bottom-width: 0px; padding-bottom: 0px; border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-top: 0px; margin-top: 75px; margin-bottom: -2px; padding-left: 0px; margin-left: 30px;">
+
+                            <li id="submenu" style="padding-left: 0px; padding-top: 10px; text-align: center;"><a
+                                    href="drink.html">Drinks</a></li>
+
+                            <!-- <li id="submenu" style="padding-left: 0px; padding-top: 10px; text-align: center;"><a href="iced-cafe.html">Iced Cafe</a></li> -->
+
+                            <li id="submenu"
+                                style="padding-left: 0px; padding-bottom: 10px; padding-top: 10px; text-align: center;">
+                                <a href="dessert.html">Dessert</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="reviews.html">Reviews</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <form action="#" id="contact">
+
+            <strong id="order">Order Form</strong><br><br>
+            <label for="name1" id="lblname">lblname</label>&nbsp;
+            <input type="text" name="name" id="name1">
+            
+            
+            <br><br>
+
+            <input type="Order_confirm" name="Order_confirm" value="Order Confirm" id="Order_button" onclick="Orderconfirm()">
+
+        </form>
+
+        
+        <script>
+            // function confirm() {
+            //     var menuName1 = document.getElementById("lblname").innerHTML;
+            //       var menuPrice1 = document.getElementById("name1").value;
+            //     //   var menuName2 = document.getElementById("lblname2").innerHTML;
+            //     //   var menuPrice2 = document.getElementById("name2").value;
+            //       var queryString2 = "?menu_name=" + menuName1 + "&menu_price=" + menuPrice1;
+            //       window.location.href = "confirm.html" + queryString2;
+            // }
+            
+        </script>
+
+        <footer> Copyright@2020, Dream Love Coffee Shop.</footer>
+    </div>
+</body>
+
+</html>

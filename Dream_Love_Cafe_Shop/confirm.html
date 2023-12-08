@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Love Cafe Shop</title>
+   
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  
+</head>
+<body>
+
+    <h1>Dream Love Cafe Shop</h1>
+    
+    <div id="container">    
+           
+           <header>
+               <nav>
+                    <ul id="nav">
+                        <li><a href="index.html" class="current">Home</a></li>
+                    
+                        <li><a href="about.html">About</a></li>
+                    
+                        <li class="sub-menu"><a href="#">Menu</a>
+                            <ul class="dropdown-menu" style="border-bottom-width: 0px; padding-bottom: 0px; border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; padding-top: 0px; margin-top: 75px; margin-bottom: -2px; padding-left: 0px; margin-left: 30px;">
+
+                                <li id="submenu" style="padding-left: 0px; padding-top: 10px; text-align: center;"><a href="drink.html">Drinks</a></li>
+
+                                <!-- <li id="submenu" style="padding-left: 0px; padding-top: 10px; text-align: center;"><a href="iced-cafe.html">Iced Cafe</a></li> -->
+
+                                <li id="submenu" style="padding-left: 0px; padding-bottom: 10px; padding-top: 10px; text-align: center;"><a href="dessert.html">Dessert</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                   
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+               </nav>
+           </header>
+           
+            
+           <form action="#" id="contact">
+
+                <strong id="order">Order Confirm Form</strong><br><br>
+
+               <p id="bbc"></p>
+                <label for="name1" id="lblname1">lblname</label>&nbsp; 
+                
+                <input type="text" name="name" id="name1" >
+                <br>
+                <label for="name2" id="lblname2">lblname</label>            
+                <input type="text" name="name" id="name2">
+                <br>
+               
+                <br><br>
+
+                <input type="Submit" name="Order_confirm" value="Submit" id="Order_button" onclick=" end() ">
+            
+        </form>    
+        
+       <script>
+        //    document.getElementById("lblname1").innerHTML="test";
+        //    document.getElementById("name1").value="1500Ks";
+        //    document.getElementById("lblname2").innerHTML="test";
+        //    document.getElementById("name2").value="1500Ks";
+        //    document.getElementById("lblname1").innerHTML=queryString2["?menu_name"];
+        //    document.getElementById("name1").value=queryString2.menu_price;
+
+        function end() {
+            alert('Thank You!!!');
+        }
+
+       </script>
+
+        <footer> Copyright@2020, Dream Love Coffee Shop.</footer> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,322 @@
+body{
+    background: url(images/noise.png);
+    width: 100%;
+    height: auto;
+    color: #252525;
+    font-size: 14px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.10);       
+    
+}
+
+#container{
+    background: url(images/bg.png) center top repeat-x;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;    
+
+} 
+
+
+h1{
+    
+    padding-top: 60px;
+    margin-bottom: 0px;
+    font-family: 'Lobster13Regular',cursive;
+    font-size: 30px;
+    font-weight: 1.4em;   
+    letter-spacing: -1px;
+    text-align: center;
+    line-height: 1.4em;
+    height: 95px;
+    color: #9c5959;
+}
+
+ #nav{
+    font-family: 'Lobster13Regular',cursive;    
+    text-align: left;    
+    font-size: 25px;
+    letter-spacing: -1px;
+    display: flex;
+    padding-left: 0px;
+    padding-top: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 174px;
+    height: 150px;    
+    
+}
+
+#nav li {    
+    list-style: none;
+    padding-left: 90px;
+    padding-top: 30px;  
+}
+
+#nav li a{
+    color: #9c5959;
+}
+
+li.sub-menu {
+    position: relative;
+}
+li.sub-menu span.glyphicon {
+    font-size: 0.7em;
+}
+li.sub-menu:hover .dropdown-menu {
+    display: block;
+    top: 0;
+    left: 20px;
+}
+ 
+#submenu{
+      background-color: rgb(236, 220, 195);
+      padding-left: 0px;
+      padding-top: 0px;
+}
+
+
+  /* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+  /* Caption text */
+.text {
+    color: #9c5959;
+    font-size: 24px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lobster13Regular',cursive;
+}
+  
+  /* Number text (1/3 etc) */
+.numbertext {
+    color: #9c5959;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+  /* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active {
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+  /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: #9c5959;
+    font-family: 'Lobster13Regular',cursive;
+}
+
+#abouttext{
+    margin-top: 20px;
+    color: #9c5959;
+}
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #9c5959;
+    font-size: 24px;
+    font-family: 'Lobster13Regular',cursive;
+    
+}
+
+label {
+    font-size: 22px;
+    font-family: 'Lobster13Regular', cursive;
+    color: #9c5959;    
+    font-weight: normal;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+
+}
+
+input[type="text"] {
+    width: 300px;
+}
+
+input[type="text"], textarea {
+    outline: none;
+    background: #f5f0e0;
+    border: 1px dotted #9C5959;
+    font-size: 14px;
+    padding: 3px;
+}
+
+#button {
+    font-family: 'Lobster13Regular', cursive;
+    color: #f5f5f5;
+    padding: 8px 14px 10px;
+    background-color: #9c5959;
+    border: none;
+    position: relative;    
+    text-decoration: none;
+    font-size: 20px;       
+    margin-left: 120px;
+}   
+
+h2{
+    color: #9c5959;
+    font-family: 'Lobster13Regular',cursive;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+p{
+    color: #9c5959;
+    font-family: 'Lobster13Regular',cursive;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+form{
+    text-align: center;
+}
+
+/* #reviews{
+    text-align: center;
+} */
+
+strong{
+    font-size: 40px;    
+    font-family: 'Lobster13Regular',cursive;
+    color: #9c5959;       
+
+}
+
+#Our_menu{
+    font-size: 40px;    
+    font-family: 'Lobster13Regular',cursive;
+    color: #9c5959;
+    padding-left: 380px; 
+}
+
+.row1_drink{
+    margin-top: 20px;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px dotted #9c5959;
+    border-radius: 10px;
+}
+#row1_col_left{
+    width: 300px;
+    height: 320px;
+    padding-top: 10px;
+}
+#row1_col_mid{
+    padding-top: 100px;
+    padding-left: 20px;    
+    font-size: 30px;    
+    font-family: 'Lobster13Regular',cursive;
+    width: 390px;
+    height: 250px;
+
+}
+#row1_col_right{
+    margin-top: 115px;
+    margin-left: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 180px;
+    height: 50px;
+    background-color: antiquewhite;
+    color: #9c5959;
+    border: 2px solid #9c5959;
+    font-size: 22px;
+    font-weight: 1.0em;
+    font-family: 'Lobster13Regular',cursive;
+    border-radius: 5px;
+
+}
+.row1_dessert{
+    margin-top: 20px;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px dotted #9c5959;
+    border-radius: 10px;
+}
+
+#reviews{
+    font-size: 30px;
+}
+
+#Order_button{
+    font-family: 'Lobster13Regular', cursive;
+    color: #f5f5f5;
+    padding: 8px 14px 10px;
+    background-color: #9c5959;
+    border: 1px;
+    position: relative;    
+    text-decoration: none;
+    font-size: 20px;       
+    margin-left: 120px;
+    width: 170px;
+}
+#contact{
+    width: 100%;
+    height: 430px;
+    border: 1px dotted #9c5959;
+    border-radius: 10px;
+}
+#order{
+    font-size: 40px;    
+    font-family: 'Lobster13Regular',cursive;
+    color: #9c5959;
+
+}
+#menu_name{
+    margin-top: 100px;
+}
+#map{
+    text-align: left;
+}
